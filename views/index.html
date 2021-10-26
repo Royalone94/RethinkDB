@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style></style>
+</head>
+
+<body>
+    <h1>Live CryptoCurrency Prices</h1>
+    <ul id="content"></ul>
+</div>
+
+<!-- <script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+<script>
+    // var currentBTCPrices = [];
+    // $(document).ready(function() {
+    //     // socket = io.connect();
+    //     var socket = io(document.location.origin + '/binanceNS');
+    //     // console.log(document.location.origin + '/binanceNS')
+    //     var lastUpdatedKey = null;
+
+    //     socket.on('connect', function () {
+    //         var index = socket.io.engine.upgrade ? 1 : 0;
+    //         socket.emit('get-coin-info', { type: 'initialize' });
+    //     });
+
+    //     socket.on('refreshedBTC', function(data) {
+    //         $('#content').children().remove();
+    //         var arrKeys = Object.getOwnPropertyNames(data);
+    //         console.log('Received Coin Count : ', arrKeys.length)
+    //         for ( var i = 0; i < arrKeys.length; i++){
+    //             var key = arrKeys[i];
+    //             var value = data[key];
+    //             var text = key + '  :  ' + value;
+    //             if ( currentBTCPrices[key] && currentBTCPrices[key] != value ){
+    //                 text = text + ' *';
+    //             }
+    //             $('#content').append($('<li>').text(text));
+    //         }
+    //         if ( arrKeys.length < 1 ){
+    //             $('#content').append($('<li>').text('There was a connection problem.'));
+    //         }
+    //         currentBTCPrices = Object.assign([], data);
+    //         socket.emit('updateBTC', { type: 'refreshAgain' });
+    //     });
+
+    //     socket.on('updateBTC-Item', function(data) {
+    //         // deleting ' *' of unchanged item          ( MISSING )
+
+    //         // if ( lastUpdatedKey ){
+    //         //     var lastText = $('#content li[coin-key-' + lastUpdatedKey + ']').text();
+    //         //     console.log(lastText)
+    //         //     lastText = lastText.replace(/ \*/gi, '');
+    //         //     console.log(lastText)
+    //         //     $('#content li[coin-key-' + lastUpdatedKey + ']').text(lastText);
+    //         // }
+
+    //         var curKey = data.new_val.key
+    //         var curValue = 1 / parseFloat( data.new_val.value );
+    //         var curText = curKey + '  :  ' + curValue
+    //         var curElement = $('#content li[coin-key-' + curKey + ']');
+    //         if ( curElement.length < 1 ) {
+    //             $('#content').append($('<li ' + 'coin-key-' + curKey + '>').text(curText));
+    //         } else{
+    //             curElement.text(curText + ' *');
+    //             lastUpdatedKey = curKey;
+    //         }
+    //     });
+    // });
+
+</script>
+
+</body>
+</html>
